@@ -1,0 +1,28 @@
+[package]
+name = "guarddutyslack"
+version = "0.2.0"
+edition = "2018"
+authors = ["Chris Austin <jackpott@gmail.com>"]
+autobins = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lambda_runtime = "0.4.1"
+serde = "^1"
+serde_json = "^1"
+serde_derive = "^1"
+log = "^0.4"
+simple_logger = "1.16.0"
+tokio = "1.15.0"
+aws_lambda_events = "^0.5.0"
+slack-hook3 = "0.11"
+regex = "1"
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[[bin]]
+name = "bootstrap"
+path = "src/main.rs"

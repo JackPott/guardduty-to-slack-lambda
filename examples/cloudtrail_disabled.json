@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:eu-west-2:999999999999:guardduty-findings:8008b663-137b-4c00-88ba-3bcc45bb2c4c",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "dbfa265e-e3dc-54a5-94c4-7c60b9ba5b02",
+        "TopicArn": "arn:aws:sns:eu-west-2:999999999999:guardduty-findings",
+        "Subject": null,
+        "Message": "{\"version\":\"0\",\"id\":\"7ca94bda-3b19-86e8-478b-17fa775b2748\",\"detail-type\":\"GuardDuty Finding\",\"source\":\"aws.guardduty\",\"account\":\"999999999999\",\"time\":\"2021-12-23T11:05:12Z\",\"region\":\"eu-west-2\",\"resources\":[],\"detail\":{\"schemaVersion\":\"2.0\",\"accountId\":\"999999999999\",\"region\":\"eu-west-2\",\"partition\":\"aws\",\"id\":\"78bef37a4dbd85f1653d0758722a2e0c\",\"arn\":\"arn:aws:guardduty:eu-west-2:999999999999:detector/7cbea685db37ee10bdb5cd7c6891ba3c/finding/78bef37a4dbd85f1653d0758722a2e0c\",\"type\":\"Stealth:IAMUser/CloudTrailLoggingDisabled\",\"resource\":{\"resourceType\":\"AccessKey\",\"accessKeyDetails\":{\"accessKeyId\":\"ASIA3T2GFSYLMF44YNPO\",\"principalId\":\"AROA3T2GFSYLOWLG3CWSO:9999999999990358500\",\"userType\":\"AssumedRole\",\"userName\":\"OrganizationAccountAccessRole\"}},\"service\":{\"serviceName\":\"guardduty\",\"detectorId\":\"7cbea685db37ee10bdb5cd7c6891ba3c\",\"action\":{\"actionType\":\"AWS_API_CALL\",\"awsApiCallAction\":{\"api\":\"DeleteTrail\",\"serviceName\":\"cloudtrail.amazonaws.com\",\"callerType\":\"Remote IP\",\"remoteIpDetails\":{\"ipAddressV4\":\"86.15.200.19\",\"organization\":{\"asn\":\"5089\",\"asnOrg\":\"Virgin Media Limited\",\"isp\":\"Virgin Media\",\"org\":\"Virgin Media\"},\"country\":{\"countryName\":\"United Kingdom\"},\"city\":{\"cityName\":\"Kensington\"},\"geoLocation\":{\"lat\":51.5041,\"lon\":-0.2022}},\"affectedResources\":{\"AWS::CloudTrail::Trail\":\"my-trail\"}}},\"resourceRole\":\"TARGET\",\"additionalInfo\":{},\"eventFirstSeen\":\"2021-12-23T10:45:45.000Z\",\"eventLastSeen\":\"2021-12-23T10:45:45.000Z\",\"archived\":false,\"count\":1},\"severity\":2,\"createdAt\":\"2021-12-23T11:02:10.043Z\",\"updatedAt\":\"2021-12-23T11:02:10.043Z\",\"findingTypeVersion\":{\"present\":false},\"title\":\"AWS CloudTrail trail my-trail was disabled.\",\"description\":\"AWS CloudTrail trail my-trail was disabled by OrganizationAccountAccessRole calling DeleteTrail under unusual circumstances. This can be attackers attempt to cover their tracks by eliminating any trace of activity performed while they accessed your account.\"}}",
+        "Timestamp": "2021-12-23T11:06:14.211Z",
+        "SignatureVersion": "1",
+        "Signature": "i5jbXqQVKk79fMA9IO77zuenIlOi17pL5d1WgcvwEAYw1paDs7zZGVY4/e1kqxITF4rA3H4hCsu43ev4I1Ky5+fk6tIY7wzon6Z2zIRE4p9TCjTjhmrQ6p7mARkNf6r1XZNL1P6w6/bc1MPWA1fgZmtqht7XF3pYLrv7MUO7lKRwCApH137sY9XmBvp7LS6xd5j6mHA1LAHqiBrcjPhBNEq5TKCnzXR77p5WsK9F2sQ6kokZM3aNhL8X8ZmTb+2wVAOAsnBbltVFJ5eozYN4x9L1X+erofNodelBY+JrTtEFfVCtIVKmuRf07RDPpbIs8YfgUE7D6IdCRZW4APH7gA==",
+        "SigningCertUrl": "https://sns.eu-west-2.amazonaws.com/SimpleNotificationService-7ff5318490ec183fbaddaa2a969abfda.pem",
+        "UnsubscribeUrl": "https://sns.eu-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-west-2:999999999999:guardduty-findings:8008b663-137b-4c00-88ba-3bcc45bb2c4c",
+        "MessageAttributes": {}
+      }
+    }
+  ]
+}

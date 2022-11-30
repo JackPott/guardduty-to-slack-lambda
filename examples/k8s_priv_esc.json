@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:eu-west-2:999999999999:guardduty-findings:e85d5378-d34f-44c7-839d-fc467c3afe36",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "e01f5071-5758-5260-aaa9-0a0df3568e85",
+        "TopicArn": "arn:aws:sns:eu-west-2:999999999999:guardduty-findings",
+        "Subject": null,
+        "Message": "{\"version\":\"0\",\"id\":\"1b88a4eb-e29d-6e5a-48e7-cf5c6f5df94d\",\"detail-type\":\"GuardDuty Finding\",\"source\":\"aws.guardduty\",\"account\":\"999999999999\",\"time\":\"2022-02-08T17:00:01Z\",\"region\":\"eu-west-2\",\"resources\":[],\"detail\":{\"schemaVersion\":\"2.0\",\"accountId\":\"999999999999\",\"region\":\"eu-west-2\",\"partition\":\"aws\",\"id\":\"38bf6d1cb27b01084e5eacf39355c289\",\"arn\":\"arn:aws:guardduty:eu-west-2:999999999999:detector/5cbedede2b0b34589ddf6c1149245844/finding/38bf6d1cb27b01084e5eacf39355c289\",\"type\":\"PrivilegeEscalation:Kubernetes/PrivilegedContainer\",\"resource\":{\"resourceType\":\"EKSCluster\",\"eksClusterDetails\":{\"name\":\"GeneratedFindingEKSClusterName\",\"arn\":\"GeneratedFindingEKSClusterArn\",\"createdAt\":1.999999999999E9,\"vpcId\":\"GeneratedFindingEKSClusterVpcId\",\"status\":\"ACTIVE\",\"tags\":[{\"key\":\"GeneratedFindingEKSClusterTag1\",\"value\":\"GeneratedFindingEKSClusterTagValue1\"},{\"key\":\"GeneratedFindingEKSClusterTag2\",\"value\":\"GeneratedFindingEKSClusterTagValue2\"},{\"key\":\"GeneratedFindingEKSClusterTag3\",\"value\":\"GeneratedFindingEKSClusterTagValue3\"}]},\"kubernetesDetails\":{\"kubernetesWorkloadDetails\":{\"containers\":[{\"image\":\"GeneratedFindingContainerImage\",\"imagePrefix\":\"GeneratedFindingContainerImagePrefix\",\"name\":\"GeneratedFindingContainerName\",\"securityContext\":{\"privileged\":true}}],\"name\":\"GeneratedFindingKubernetesWorkloadName\",\"namespace\":\"GeneratedFindingKubernetesWorkloadNamespace\",\"type\":\"GeneratedFindingKubernetesWorkloadType\",\"uid\":\"GeneratedFindingKubernetesWorkloadUID\"},\"kubernetesUserDetails\":{\"username\":\"GeneratedFindingUserName\",\"uid\":\"GeneratedFindingUID\",\"groups\":[\"GeneratedFindingUserGroup\"]}}},\"service\":{\"serviceName\":\"guardduty\",\"detectorId\":\"5cbedede2b0b34589ddf6c1149245844\",\"action\":{\"actionType\":\"KUBERNETES_API_CALL\",\"kubernetesApiCallAction\":{\"requestUri\":\"GeneratedFindingRequestURI\",\"verb\":\"create\",\"sourceIPs\":[\"10.0.0.23\"],\"userAgent\":\"\",\"remoteIpDetails\":{\"ipAddressV4\":\"198.51.100.0\",\"organization\":{\"asn\":\"0\",\"asnOrg\":\"GeneratedFindingASNOrg\",\"isp\":\"GeneratedFindingISP\",\"org\":\"GeneratedFindingORG\"},\"country\":{\"countryName\":\"GeneratedFindingCountryName\"},\"city\":{\"cityName\":\"GeneratedFindingCityName\"},\"geoLocation\":{\"lat\":0,\"lon\":0}},\"statusCode\":201}},\"resourceRole\":\"TARGET\",\"additionalInfo\":{\"sample\":true},\"evidence\":null,\"eventFirstSeen\":\"2022-02-08T16:45:01.000Z\",\"eventLastSeen\":\"2022-02-08T16:56:25.000Z\",\"archived\":false,\"count\":2},\"severity\":5,\"createdAt\":\"2022-02-08T16:45:01.558Z\",\"updatedAt\":\"2022-02-08T16:56:25.660Z\",\"title\":\"Privileged container with root level access launched on the EKS Cluster.\",\"description\":\"A privileged container with root level access was launched on EKS Cluster GeneratedFindingEKSClusterName. If this behavior is not expected, it may indicate that your credentials are compromised.\"}}",
+        "Timestamp": "2022-02-08T17:01:02.590Z",
+        "SignatureVersion": "1",
+        "Signature": "AKIvgBdAnAB1Dv3Twne7GHuv3Si/uVaT+IwrcAz3k9sx0wDLSB52KblZeT1VB1oCZEjNVsmKELAxn0E3wndN7DZvMa4wa0CkacRXtwROmOp60SIYgeVtgZn3g/lk4D0dZiB5aSLRBMmlROY/OPFIUu6JNp1AqIuTuntgmFSgCcDgQeHbBszq3CtkpONb7xIJLnQTCR6EMCR4fflBIllD+dr1+vCaeco8P9GH3pSnmlOQBdLUzrtNiYJWC8sfcBQLg+OfgMKwaJJSz7BxDwD9uArd2X1eDS6Sx8KmJT3+lpOuMDP3SiUWS46LojAPyEBSVXrMoLEwu9ojgRVZx0Q/dg==",
+        "SigningCertUrl": "https://sns.eu-west-2.amazonaws.com/SimpleNotificationService-7ff5318490ec183fbaddaa2a969abfda.pem",
+        "UnsubscribeUrl": "https://sns.eu-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-west-2:999999999999:guardduty-findings:e85d5378-d34f-44c7-839d-fc467c3afe36",
+        "MessageAttributes": {}
+      }
+    }
+  ]
+}

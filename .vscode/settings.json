@@ -1,0 +1,13 @@
+{
+  "code-runner.executorMap": {
+    "rust": "scripts/build_and_run.sh"
+  },
+  "cSpell.words": [
+    "chrono",
+    "color",
+    "guarddutyslack",
+    "Guardy",
+    "iamuser",
+    "tipe"
+  ]
+}
